@@ -1,0 +1,22 @@
+/* Framework for Body of Tipmaster Application document */
+
+body {
+	margin:0;
+	padding:0;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+}
+table {
+	border-collapse:collapse;
+}
+td,th {
+	margin:0;
+	padding:0;
+	border:0;
+}
+img {
+	border:0;
+}
+
+

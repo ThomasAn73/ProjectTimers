@@ -1,0 +1,246 @@
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:18.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";}
+h4
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";}
+pre
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	background:#EEEEEE;
+	font-size:10.0pt;
+	font-family:Courier;
+	mso-fareast-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	mso-ansi-language:EN-US;}
+p.ListBullet, li.ListBullet, div.ListBullet
+	{mso-style-name:"ListBullet\,lb";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:18.0pt;
+	text-align:justify;
+	text-indent:-18.0pt;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	mso-list:l45 level1 lfo43;
+	tab-stops:list 18.0pt;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:maroon;
+	mso-ansi-language:EN-US;}
+p.ListNumber, li.ListNumber, div.ListNumber
+	{mso-style-name:"ListNumber\,ln";
+	mso-style-parent:"ListBullet\,lb";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:18.0pt;
+	text-align:justify;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:list 18.0pt;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:navy;
+	mso-ansi-language:EN-US;
+	layout-grid-mode:line;}
+p.ListNumber0, li.ListNumber0, div.ListNumber0
+	{mso-style-name:">ListNumber\,>ln";
+	mso-style-parent:"ListNumber\,ln";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:36.0pt;
+	text-align:justify;
+	text-indent:-18.0pt;
+	mso-pagination:widow-orphan;
+	tab-stops:list 18.0pt;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:navy;
+	mso-ansi-language:EN-US;
+	layout-grid-mode:line;}
+p.ChapterLabel, li.ChapterLabel, div.ChapterLabel
+	{mso-style-name:"ChapterLabel\,cl";
+	mso-style-parent:"ChapterTitle\,ct";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:24.0pt;
+	margin-left:0cm;
+	text-align:right;
+	mso-line-height-alt:12.0pt;
+	page-break-before:always;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:48.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:red;
+	mso-ansi-language:EN-US;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.ChapterTitle, li.ChapterTitle, div.ChapterTitle
+	{mso-style-name:"ChapterTitle\,ct";
+	margin-top:4.0pt;
+	margin-right:0cm;
+	margin-bottom:108.0pt;
+	margin-left:0cm;
+	text-align:right;
+	mso-line-height-alt:12.0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:red;
+	mso-ansi-language:EN-US;}
+span.literal
+	{mso-style-name:"literal\,fc";
+	mso-ascii-font-family:Courier;
+	mso-hansi-font-family:Courier;
+	color:red;}
+p.TableTitle, li.TableTitle, div.TableTitle
+	{mso-style-name:"TableTitle\,tt";
+	mso-style-parent:"FigureTitle\,gt";
+	margin-top:12.0pt;
+	margin-right:36.0pt;
+	margin-bottom:4.0pt;
+	margin-left:36.0pt;
+	text-align:center;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:navy;
+	mso-ansi-language:EN-US;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.FigureTitle, li.FigureTitle, div.FigureTitle
+	{mso-style-name:"FigureTitle\,gt";
+	margin-top:4.0pt;
+	margin-right:36.0pt;
+	margin-bottom:4.0pt;
+	margin-left:36.0pt;
+	text-align:center;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:maroon;
+	mso-ansi-language:EN-US;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.Code, li.Code, div.Code
+	{mso-style-name:"Code\,x";
+	margin-top:0cm;
+	margin-right:-67.7pt;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:bar 423.0pt;
+	border:none;
+	mso-border-left-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 0cm 2.0pt;
+	font-size:9.0pt;
+	font-weight: bold;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:green;
+	letter-spacing:-.5pt;
+	mso-ansi-language:EN-US;}
+span.emphasis
+	{mso-style-name:"emphasis\,fi";
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	color:red;
+	mso-ansi-language:EN-US;
+	font-style:italic;}
+p.Note, li.Note, div.Note
+	{mso-style-name:"Note\,n";
+	margin-top:6.0pt;
+	margin-right:36.0pt;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	text-align:justify;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-top-alt:solid windowtext .75pt;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:2.0pt 0cm 2.0pt 0cm;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:teal;
+	mso-ansi-language:EN-US;}

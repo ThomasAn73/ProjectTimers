@@ -1,0 +1,11 @@
+Timer Name = Untitled
+Total time = 000:10:50 <hhh:mm:ss>
+Keywords used = test
+Timer Creation Date = 2008/06/07 12:26 PM
+Last Updated = 2008/06/08 08:35 PM
+Type = BSN
+
+Timer History (max depth = 100 active days)
+Format (comma separated): Date, Running Total <hhh:mm:ss>, Day Total <hh:mm:ss>
+2008/06/08, 000:10:50, 00:10:50
+

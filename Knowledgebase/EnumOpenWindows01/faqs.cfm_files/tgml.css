@@ -1,0 +1,95 @@
+/* TGML MARKUP */
+td.tgml div {
+white-space: -moz-pre-wrap;  /* Mozilla, supported since 1999 */
+ white-space: -pre-wrap;      /* Opera 4 - 6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ white-space: pre-wrap; /* CSS 3 */
+	word-wrap: break-word;
+}
+.post table td.tgml {
+	padding:3px 5px !important;
+}
+.tgml #code {
+	margin : 15px 20px 15px 20px;
+	border-width : 2px;
+	border-style : inset;
+}
+.tgml #code h4 {
+	font-size : 10px;
+	background-color : #777 !important;
+	color : white;
+	font-weight : bold;
+	text-transform : uppercase;
+	padding : 1px 2px 2px 4px;
+	border : 0px;
+	margin : 0px;
+}
+.tgml #code .body {
+	padding : 5px;
+	font-family : monospace;
+	background-color : #FFFFFF;
+	font-style : normal;
+}
+
+.tgml #code .body div, #code .body span {
+	font-family : monospace;
+	font-style : normal;
+}
+
+.tgml blockquote {
+	margin : 15px 20px 15px 20px;
+	border-width : 2px;
+	border-style : inset;
+	background-color : #FFFFFF;
+	font-family : serif;
+	font-style : italic;
+}
+
+.tgml blockquote h4 {
+	background-color : #9ff !important;
+	font-family: Tahoma,Geneva,Arial,sans-serif;
+	font-size : 11px;
+	font-weight : bold;
+	font-style : normal;
+	color : #00C;
+	padding : 1px 2px 2px 4px;
+	border : 0px;
+	margin : 0px;
+}
+
+.tgml blockquote .body {
+	font-size : 1.2em;
+	font-family : serif;
+	font-style : italic;
+	padding : 5px;
+}
+
+.tgml blockquote .body .body {
+    font-size : 100%;
+}
+
+.tgml blockquote div, .tgml blockquote span {
+	font-family : serif;
+	font-style : italic;
+}
+
+.tgml .signature {
+	margin-left : 25px; 
+}
+
+*>.tgml li {
+  list-style-position: inside;
+}
+*>.tgml ul>li, *>.tgml ol>li {
+  list-style-position: outside;
+}
+
+.tgml a {
+	font-weight: bold;
+}
+.tgml a:hover {
+	color:#cc3333;
+}
+.tgml .small {
+	font-size :7pt;
+}

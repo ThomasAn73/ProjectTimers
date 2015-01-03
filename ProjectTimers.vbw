@@ -1,0 +1,14 @@
+frmMainWindow = 42, 17, 872, 810, , 197, 33, 881, 417, C
+frmTimerEdit = 63, 75, 902, 796, , 217, 116, 574, 432, C
+SniffMousePosition = 47, 92, 818, 849, 
+SniffOpenWindows = 104, 114, 885, 835, 
+mdlUpdateTimers = 77, 98, 884, 821, 
+mdlTimersFileIO = 53, 5, 873, 743, 
+mdlGetDirectory = 105, 112, 841, 792, C
+mdlMinToTray = 137, 129, 808, 764, 
+HistoryEntry = 172, 61, 843, 879, 
+frmTimerHistory = 176, 192, 847, 827, , 42, 42, 349, 376, C
+mdlGeneral = 33, 244, 833, 879, 
+frmTrayView = 183, 166, 854, 801, C, 343, 51, 611, 308, C
+mdlCheckPermissions = 15, 76, 905, 711, 
+mdlGetUserDirPath = 283, 501, 1020, 1136, 

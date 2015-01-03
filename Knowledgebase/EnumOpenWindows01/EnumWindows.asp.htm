@@ -1,0 +1,229 @@
+<html><head>
+
+
+<meta http-equiv="description" content="Enumerate Top Level Windows using the EnumWindows API. Get Class, title, and handle information for a window.">
+<meta http-equiv="keywords" content="The Scarms, TheScarms, Visual Basic Code Library, VB programming, VB5.0, VB6.0 programs, microsoft windows, registry, win32 apis, software, enumerate, process ID, thread ID, class name, call backs, callbacks, getwindowtext, Enumerate windows, top level windows, EnumWindows, GetClassName, GetWindowText, GetWindowThreadProcessId">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="Microsoft Border" content="none"><title>Enumerate Top Level Windows</title>
+
+
+
+<link rel="stylesheet" type="text/css" href="EnumWindows.asp_files/common.css">
+<script type="text/javascript" src="EnumWindows.asp_files/menu.js"></script></head><body class="body">
+
+<script language="javascript">WriteTopMenu()</script><table align="center" border="0" cellpadding="0" cellspacing="0" width="700"><tbody><tr><td><div class="thescarmsdiv"><span class="thescarmsheader">TheScarms.com</span>&nbsp;<span class="thescarmstext">Visual Basic and C# Code Library</span></div><div id="themenu"><ul><li><a href="#" onmouseover="mainmenu.dropit(this,event,'mainmenu0')">Home</a></li><li><a href="#" onmouseover="mainmenu.dropit(this,event,'mainmenu1')">VB.NET / C#</a></li><li><a href="#" onmouseover="mainmenu.dropit(this,event,'mainmenu2')">Visual Basic 6.0</a></li><li><a href="#" onmouseover="mainmenu.dropit(this,event,'mainmenu3')">XML Tutorials</a></li><li><a href="#" onmouseover="mainmenu.dropit(this,event,'mainmenu4')">RSS Feeds</a></li><li><a href="#" onmouseover="mainmenu.dropit(this,event,'mainmenu5')">AppSentinel</a></li><li><a href="mailto:vbhelp@thescarms.com">Contact</a></li></ul></div><div id="mainmenu0" class="dropmenudiv"><a href="http://www.thescarms.com/default.htm">TheScarms Home</a><a href="http://www.thescarms.com/dotNet/default.asp">VB.Net &amp; C# Home</a><a href="http://www.thescarms.com/VBasic/default.asp">Visual Basic 6.0 Home</a><a href="http://www.thescarms.com/AppSentinel/default.asp">AppSentinel Product</a><a href="http://www.thescarms.com/HotStuff/default.htm">Hot Sauce Section</a><a href="http://www.thescarms.com/photos/default.htm">Photo Gallery</a></div><div id="mainmenu1" class="dropmenudiv"><a href="http://www.thescarms.com/dotnet/default.asp">.NET Home</a><a href="http://www.thescarms.com/dotnet/default.asp#environ">Environmental</a><a href="http://www.thescarms.com/dotnet/default.asp#general">General Programming</a><a href="http://www.thescarms.com/dotnet/default.asp#debug">Debugging &amp; Error Handling</a><a href="http://www.thescarms.com/dotnet/default.asp#security">Security</a><a href="http://www.thescarms.com/dotnet/default.asp#winform">Forms &amp; Controls</a><a href="http://www.thescarms.com/dotnet/default.asp#io">I/O &amp; File</a><a href="http://www.thescarms.com/dotnet/default.asp#string">String / Regular Expression</a><a href="http://www.thescarms.com/dotnet/default.asp#excel">Excel</a><a href="http://www.thescarms.com/dotnet/default.asp#email">Email Related</a><a href="http://www.thescarms.com/dotnet/default.asp#asp">ASP.NET</a><a href="http://www.thescarms.com/dotnet/default.asp#dataset">ADO.NET</a><a href="http://www.thescarms.com/dotnet/default.asp#datagrid">DataGrid</a><a href="http://www.thescarms.com/dotnet/default.asp#crystal">Crystal Reports</a></div><div id="mainmenu2" class="dropmenudiv"><a href="http://www.thescarms.com/vbasic/default.asp">VB 6.0 Home</a><a href="http://www.thescarms.com/vbasic/VbSystemRelated.asp">System Info Related</a><a href="http://www.thescarms.com/vbasic/VbWindowFunctions.asp">Window Related</a><a href="http://www.thescarms.com/vbasic/VbProcessRelated.asp">Process Related</a><a href="http://www.thescarms.com/vbasic/VbFileOps.asp">File &amp; Registry</a><a href="http://www.thescarms.com/vbasic/VbFormsAndControls.asp">Forms &amp; Controls</a><a href="http://www.thescarms.com/vbasic/VbSubClassing.asp">Sub-Classing</a><a href="http://www.thescarms.com/vbasic/vbmisc.asp">Miscellaneous</a><a href="#" onmouseover="submenu.dropit(this,event,'submenu21')">Windows &amp; VB Tips</a></div><div id="mainmenu3" class="dropmenudiv"><a href="http://www.thescarms.com/xml/XMLTutorial.asp">XML Tutorial</a><a href="http://www.thescarms.com/xml/DTDTutorial.asp">DTD Tutorial</a><a href="http://www.thescarms.com/xml/SchemaTutorial.asp">Schema Tutorial</a><a href="http://www.thescarms.com/xml/XSLTutorial.asp">XSL Tutorial</a><a href="http://www.thescarms.com/xml/DOMTutorial.asp">DOM Tutorial</a><a href="http://www.thescarms.com/xml/XHTMLTutorial.asp">XHTML Tutorial</a></div><div id="mainmenu4" class="dropmenudiv"><a href="http://www.thescarms.com/dotNet/dotNet.xml">VB.NET &amp; C#</a><a href="http://www.thescarms.com/vbasic/vbasic.xml">Visual Basic 6.0</a></div><div id="mainmenu5" class="dropmenudiv"><a href="http://www.thescarms.com/AppSentinel/default.asp">Home</a><a href="http://www.thescarms.com/AppSentinel/features.asp">Learn More</a><a href="http://www.thescarms.com/AppSentinel/components.asp">Components</a><a href="http://www.thescarms.com/AppSentinel/modes.asp">How it Works</a><a href="http://www.thescarms.com/AppSentinel/faq.asp">Frequently Asked Questions</a><a href="http://www.thescarms.com/AppSentinel/trial.asp">Free Trial</a><a href="http://www.thescarms.com/AppSentinel/purchase.asp">Purchase</a></div><div id="submenu21" class="dropmenudiv"><a href="http://www.thescarms.com/vbasic/tips.asp#XP">XP Related</a><a href="http://www.thescarms.com/vbasic/tips.asp#Windows">Windows</a><a href="http://www.thescarms.com/vbasic/tips.asp#System%20Related">System</a><a href="http://www.thescarms.com/vbasic/tips.asp#Mouse">Mouse</a><a href="http://www.thescarms.com/vbasic/tips.asp#Keyboard">Keyboard</a><a href="http://www.thescarms.com/vbasic/tips.asp#Menu">Menus</a><a href="http://www.thescarms.com/vbasic/tips.asp#File">Files</a><a href="http://www.thescarms.com/vbasic/tips.asp#Explorer">Explorer/IE</a><a href="http://www.thescarms.com/vbasic/tips.asp#Visual%20Basic">VB</a></div></td></tr></tbody></table><table align="center" border="0" cellpadding="0" cellspacing="0" width="700"><tbody><tr><td align="center" valign="top" width="700"><form method="get" action="http://www.google.com/custom" target="google_window"><div id="searchdiv" class="searchdiv" align="center"><input name="btnSubmit" value="Google Search" class="ButtonSearch" type="submit">&nbsp;<input name="q" size="25" maxlength="255" value="" class="TextSearch" type="text">&nbsp;<input name="sitesearch" value="www.TheScarms.com" checked="checked" type="radio"><span class="OptionsSearch">TheScarms</span>&nbsp;<input name="sitesearch" value="" type="radio"><span class="OptionsSearch">The Web</span><input name="cof" value="AH:center;S:http://www.thescarms.com;AWFID:e24561288b1f56f3;" type="hidden"><input name="domains" value="thescarms.com" type="hidden"><input name="domains" value="www.thescarms.com" type="hidden"><input name="client" value="pub-7550912394621664" type="hidden"><input name="forid" value="1" type="hidden"><input name="ie" value="ISO-8859-1" type="hidden"><input name="oe" value="ISO-8859-1" type="hidden"><input name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;" type="hidden"><input name="hl" value="en" type="hidden">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.thescarms.com/vbasic/donate.asp"><img src="EnumWindows.asp_files/donate.gif" alt="If you use this code, Please make a donation!" align="middle" border="0" height="23" width="110"></a></div></form></td></tr></tbody></table>
+<div align="center">
+<script language="javascript">WriteTopAd()</script><table align="center" bgcolor="white" border="0" cellpadding="0" cellspacing="0" width="700"><tbody><tr><td><script type="text/javascript">google_ad_client = "pub-7550912394621664";google_ad_width  = 468;google_ad_height = 60;google_ad_format = "468x60_as";google_ad_channel="";google_ad_type   = "text_image";google_color_border = "F9DFF9";google_color_bg   = "FFFFFF";google_color_link = "0000CC";google_color_url  = "008000";google_color_text = "000000";</script><script type="text/javascript" src="EnumWindows.asp_files/show_ads.js"></script><br></td></tr></tbody></table>
+</div>
+
+<!-------------------------------->
+<!-- Body                       -->
+<!-------------------------------->
+<p>&nbsp;</p>
+<table align="center" border="0" width="665"><tbody><tr><td>
+
+<h1 class="heading">Enumerate Top Level Windows</h1>
+
+
+<p>This example illustrates how to list all of the top-level
+windows currently in use and extract each window's handle, class name, title, and process
+and thread IDs.&nbsp; It also demonstrates how to use <span class="KeyWord">callback</span>
+functions as well as <a href="http://www.thescarms.com/VBasic/listbox.asp">Setting Tab Stops in a ListBox</a>.</p>
+
+<p>Although this program shows how to perform a number of
+useful tasks, by itself it is not extremely useful.&nbsp;&nbsp; To see how to modify this
+code to simulate the Window's Task List displayed when you hit the Alt-Tab keys, visit my <a href="http://www.thescarms.com/vbasic/alttab.asp">Task List</a> example.</p>
+
+
+<span>
+<center>
+<p>
+<img src="EnumWindows.asp_files/EnumWindows.gif" alt="Enumerate all Top-level Windows with the EnumWindows API" height="267" width="603">
+<br><a href="http://www.thescarms.com/Downloads/EnumWindows.zip">Download Source Code</a>
+<br><span class="LastChg">(Last Updated 11/30/1998)</span>
+</p>
+</center>
+</span>
+
+
+<p>
+<table class="OuterTable" bordercolorlight="#C0C0C0" bordercolordark="blue" border="2" bordercolor="#808080" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td>
+      <table cellspacing="0">
+        <tbody><tr>
+          <td class="InnerTable">
+            Enumerating Windows
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+</p><p>The <span class="KeyWord">EnumWindows</span> API function is used to enumerate all of the
+existing windows.&nbsp; When you issue <span class="KeyWord">EnumWindows</span> you pass it the address of a public function defined in your code using
+the <span class="KeyWord">AddressOf</span> operator.&nbsp;
+The <span class="KeyWord">callback</span> function, which I
+named fEnumWindowsCallBack, must reside in a .bas module.&nbsp; The operating system calls
+your function, fEnumWindowsCallBack in this case, for each window and passes it the handle
+of the identified window.&nbsp; <span class="KeyWord">EnumWindows</span> continues until the last top-level window is enumerated or the <span class="KeyWord">callback</span> function returns False.</p>
+
+<p>To build the window list, my fEnumWindowsCallBack
+function examines each window it is passed and retrieves certain information about that
+window.&nbsp; For starters, it call the <span class="KeyWord">GetClassName</span> API to
+get the name of the class the window&nbsp;belongs to.&nbsp; Next it calls <span class="KeyWord">GetWindowText</span> to get the window's caption.&nbsp; Finally, the <span class="KeyWord">GetWindowThreadProcessId</span> function is used to return the process ID
+and thread ID the window is associated with.</p>
+
+
+<p>
+<table class="OuterTable" bordercolorlight="#C0C0C0" bordercolordark="blue" border="2" bordercolor="#808080" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td>
+      <table cellspacing="0">
+        <tbody><tr>
+          <td class="InnerTable">
+            Setting Tab Stops in a Listbox
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+
+</p><p>This information is displayed in a listbox for simplicity
+sake.&nbsp; Because the data consists of rows and columns, a grid control comes to mind.
+&nbsp;However, it is an easy matter to set Tab stops in a listbox to neatly align the data
+into columns.&nbsp; To set the Tab stops I use a type safe variation of the <span class="KeyWord">SendMessage</span> function which I call <span class="KeyWord">SendMessageArray</span>.&nbsp;
+Sending the <span class="KeyWord">LB_SETTABSTOPS</span> message to the listbox with a
+wParam value of zero clears any existing Tabs.&nbsp; To set the Tabs you need to store the
+Tab Stops in an array.&nbsp; Then you resend the <span class="KeyWord">LB_SETTABSTOPS</span>
+message.&nbsp; This time wParam is set to the number of tab stops and the lParam value is
+set to the first element of the tab stop array.</p>
+
+<p>While there is a way to calculate the location of the tab
+stops, I find the trial and error method to work best.&nbsp; The listbox program
+referenced above talks about this in more detail.</p>
+
+<p>
+<table class="OuterTable" bordercolorlight="#C0C0C0" bordercolordark="blue" border="2" bordercolor="#808080" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+    <td>
+      <table cellspacing="0">
+        <tbody><tr>
+          <td class="InnerTable">
+            Instructions
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+</p><p>Download this project and run it to view all top-level
+windows.</p>
+
+<!------------------------------------------>
+<!-- Common Footer                        -->
+<!------------------------------------------>
+
+
+
+<hr color="cornflowerblue" width="100%">
+
+<!--- ads by google  --->
+<div align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-7550912394621664";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_channel ="";
+google_ad_type = "text_image";
+google_color_border = "F9DFF9";
+google_color_bg = "FFFFFF";
+google_color_link = "0000CC";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript" src="EnumWindows.asp_files/show_ads.js">
+</script>
+</div>
+<!--- ads by google  --->
+
+
+<!--- ads by google  --->
+<br>
+<div align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-7550912394621664";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_channel ="";
+google_ad_type = "text";
+google_color_border = "F9DFF9";
+google_color_bg = "FFFFFF";
+google_color_link = "0000CC";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript" src="EnumWindows.asp_files/show_ads.js">
+</script>
+</div>
+<!--- ads by google  --->
+
+
+<hr color="cornflowerblue" width="90%">
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="665">
+<tbody><tr>
+  <td align="left" width="555"><p><span class="footer">
+    If you use this code, please mention "www.TheScarms.com"</span></p>
+  </td>
+  <td width="110"><p align="right">
+    <a href="mailto:?subject=TheScarms%20Code%20Library&amp;body=This%20link%20was%20forwarded%20to%20you%20from:%20TheScarms%20Code%20Library.%20%20%20%20http://www.TheScarms.com/vbasic/ENUMWINDOWS.ASP" title="Send this page to a friend." class="footer">
+    <img src="EnumWindows.asp_files/icoemail.gif" align="middle" border="0" height="10" width="18">Email this page</a></p>
+  </td>
+</tr>
+</tbody></table>
+
+<!----------------------------->
+<!-- AppSentinel             -->
+<!----------------------------->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+<tbody><tr height="10"><td colspan="2" width="600"></td></tr>
+<tr>
+  <td align="left" bgcolor="white" width="300">
+    <p>
+    <a href="http://www.thescarms.com/appsentinel/default.asp">    
+    <img src="EnumWindows.asp_files/appsentinel.gif" alt="TheScarms AppSentinel lets you securely copy protect and create evaluation versions of your software" align="middle" border="0" height="40" width="231"></a>
+    </p>
+  </td>
+  <td align="right" bgcolor="white" width="300">
+    <p>
+    <span class="footer"><b>
+    <a href="http://www.thescarms.com/appsentinel/default.asp" title="AppSentinel lets you create trial versions of your software and stops users from copying your applications without your permission!">Download your trial copy today!</a>
+    </b></span>
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2" width="600">
+    <p align="center">
+    TheScarms<sup>(tm)</sup> AppSentinel lets you quickly and easily create evaluation 
+    versions of your software and stop unauthorized copying and unregistered 
+    use of your programs!
+    </p>
+  </td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+
+
+</td></tr></tbody></table>
+</body></html>

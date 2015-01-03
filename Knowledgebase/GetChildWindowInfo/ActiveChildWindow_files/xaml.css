@@ -1,0 +1,36 @@
+p{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: Black;
+	font-size : 11;
+	font-weight: bold;
+}
+
+.copy{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: Black;
+	font-size : 11;
+	font-weight: bold;
+}
+
+.title{
+    font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	 font-size : 20;
+    color: White;
+	 font-weight: bold;
+	text-decoration: none;	 
+}
+
+a.standard{
+	text-decoration: underline;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: Black;
+	font-size : 11;	
+	font-weight: bold;
+}
+
+ td{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: Black;
+	font-size : 11;
+	
+ }
